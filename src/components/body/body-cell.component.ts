@@ -29,7 +29,7 @@ import { MouseEvent, KeyboardEvent } from '../../events';
       <ng-template #cellTemplate
         *ngIf="column.cellTemplate"
         [ngTemplateOutlet]="column.cellTemplate"
-        [ngOutletContext]="{
+        [ngTemplateOutletContext]="{
           value: value,
           row: row,
           column: column,

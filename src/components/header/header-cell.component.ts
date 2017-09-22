@@ -30,7 +30,7 @@ import { MouseEvent } from '../../events';
       <ng-template
         *ngIf="column.headerTemplate"
         [ngTemplateOutlet]="column.headerTemplate"
-        [ngOutletContext]="{ 
+        [ngTemplateOutletContext]="{ 
           column: column, 
           sortDir: sortDir,
           sortFn: sortFn,
